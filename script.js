@@ -1,7 +1,8 @@
 const app = document.querySelector('#app');
 const searchInput = document.querySelector('#search-input');
 const submitButton = document.querySelector('#submit');
-const endpoint = 'https://node-api-keys.rjlevy.repl.co/json';
+const endpoint = 
+'https://node-api-keys-for-unsplash.rjlevy.repl.co/json';
 
 function getImages() {
   if (!searchInput.value) return;
