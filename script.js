@@ -18,8 +18,8 @@ function getImages() {
 }
 
 function renderImages(array) {
-  const params = `&w=200&h=200&fit=crop&fm=jpg&q=95" style="margin:5px;object-fit:cover;width:200px;height:200px;"`;
-  return array.map(item => `<img src="${item.urls.regular}${params}">`).join('');
+  const params = `&fit=crop&fm=jpg&q=95"`;
+  return array.map(item => `<div><img src="${item.urls.regular}${params}"></div>`).join('');
 }
 
 submitButton.addEventListener('click', (e) => {

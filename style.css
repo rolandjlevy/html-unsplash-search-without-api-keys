@@ -11,10 +11,46 @@ body {
 
 h2 {
   font-size: 2rem;
+  text-align: center;
 }
 
 .search input[type="text"],
 .search button {
   padding: 5px 10px;
   font-size: 1rem;
+}
+
+.search button {
+  cursor: pointer;
+}
+
+#app {
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1100px;
+}
+
+#app > div {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  margin: 5px;
+}
+
+#app > div > img {
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1);
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+#app > div > img:hover {
+  transform: scale(1.5);
+  transition: all 0.3s ease;
 }
