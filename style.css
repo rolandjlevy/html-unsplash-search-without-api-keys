@@ -16,12 +16,19 @@ h2 {
 
 .search input[type="text"],
 .search button {
-  padding: 5px 10px;
+  padding: 6px 12px;
   font-size: 1rem;
+  border: 1px solid #999;
 }
 
-.search button {
+.search > button {
   cursor: pointer;
+  background: #e6e6e6;
+  border-left: none;
+}
+
+.search > button:not(:disabled):hover {
+  background: #f0f0f0;
 }
 
 #app {
