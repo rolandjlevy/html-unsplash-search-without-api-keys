@@ -16,7 +16,7 @@ h2 {
 
 .search input[type="text"],
 .search button {
-  padding: 6px 12px;
+  padding: 6px 10px;
   font-size: 1rem;
   border: 1px solid #999;
 }
